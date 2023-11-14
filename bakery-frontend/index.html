@@ -15,21 +15,20 @@
 
 <header>
     <div class="container">
-        <div class="header-container">
-            <nav class="header-nav">
-                <a href="/">
-                    <img src="./images/logo.svg" alt="Логотип"/>
-                </a>
+        <nav>
+            <a href="/">
+                <img src="./images/logo.svg" alt="Логотип"/>
+            </a>
 
-                <ul class="header-menu">
-                    <li><a class="header-link" href="#traditions-section"> Наші традиції </a></li>
-                    <li><a class="header-link" href="#chefs-section"> Шеф-кухарі </a></li>
-                    <li><a class="header-link" href="#formats-section"> Формати </a></li>
-                    <li><a class="header-link" href="#contacts-section"> Контакти</a></li>
-                </ul>
-            </nav>
-            <button class="button" type="button">Замовити дзвінок</button>
-        </div>
+            <ul>
+                <li><a class="header-link" href="#traditions-section"> Наші традиції </a></li>
+                <li><a class="header-link" href="#chefs-section"> Шеф-кухарі </a></li>
+                <li><a class="header-link" href="#formats-section"> Формати </a></li>
+                <li><a class="header-link" href="#contacts-section"> Контакти</a></li>
+            </ul>
+        </nav>
+
+        <button class="button" type="button">Замовити дзвінок</button>
     </div>
 </header>
 
@@ -41,7 +40,7 @@
         </div>
     </section>
 
-    <section class="advantages-section">
+    <section>
         <div class="container">
             <h2 class="hidden">Nashi perevagi</h2>
             <ul class="advantages-list">
@@ -54,40 +53,30 @@
 
     <section class="traditions-section section" id="traditions-section">
         <div class="container">
-            <div class="traditions-container">
-                <div class="traditions-content">
-                    <h2 class="traditions-title section-title">Новий формат традицій</h2>
+            <h2 class="traditions-title section-title">Новий формат традицій</h2>
 
-                    <p class="traditions-text">
-                        <span class="brand-uppercase">shop bakery</span> — це пекарня, яка взяла все найкраще, і
-                        зберегла
-                        смак
-                        традиційної випічки та
-                        натуральність
-                        інгредієнтів.
-                    </p>
-                    <p class="traditions-text limited">
-                        Ми працюємо як найвідоміші мережі—
-                        <span class="brand">5 хвилин і замовлення готове</span>.
-                        А ще у наших пекарень стильний дизайн
-                        та висока якість обслуговування!
-                    </p>
-                </div>
-                <div class="traditions-image">
-                    <img src="./images/baker-man.jpg" alt="Чоловік-пекар дивиться на батони"/>
-                </div>
-            </div>
+            <p class="traditions-text">
+                <span class="brand-uppercase">shop bakery</span> — це пекарня, яка взяла все найкраще, і зберегла смак
+                традиційної випічки та
+                натуральність
+                інгредієнтів.
+            </p>
+            <p class="traditions-text">
+                Ми працюємо як найвідоміші мережі— <span class="brand">5 хвилин і замовлення готове</span>. А ще у наших
+                пекарень
+                стильний дизайн та
+                висока якість обслуговування!
+            </p>
+            <img src="./images/baker-man.jpg" alt="Чоловік-пекар дивиться на батони"/>
         </div>
     </section>
 
     <section class="section" id="chefs-section">
         <div class="container">
-            <h2 class="chefs-title section-title centered">
-                Наші найкращі <span class="accent">шеф - кухарі</span></h2>
+            <h2 class="chefs-title section-title">Наші <span class="accent">шеф кухарі</span></h2>
             <ul>
                 <li>
                     <article>
-                        <img class="chef-photo" src="/images/nastya-chef.jpg" alt="nch">
                         <h3 class="chef-title">Настя</h3>
                         <p>Привіт, я Настя!
                         </p>
@@ -100,7 +89,6 @@
                 </li>
                 <li>
                     <article>
-                        <img class="chef-photo" src="/images/vlad-chef.jpg" alt="vldch">
                         <h3 class="chef-title">Влад</h3>
                         <p>Привіт, я Влад!</p>
 
@@ -119,10 +107,10 @@
 
     <section class="section" id="formats-section">
         <div class="container">
-            <h2 class="formats-title section-title centered">Формат</h2>
-            <ul class="formats-list">
-                <li class="formats-item">
-                    <article class="format-card">
+            <h2 class="formats-title section-title">Формат</h2>
+            <ul>
+                <li>
+                    <article>
                         <h3 class="format-title" lang="en">Walrus</h3>
                         <div class="format-text">
                             <p>Площа: до 120 м2</p>
@@ -133,8 +121,8 @@
                         </div>
                     </article>
                 </li>
-                <li class="formats-item">
-                    <article class="format-card">
+                <li>
+                    <article>
                         <h3 class="format-title" lang="en">Horseshoe</h3>
 
                         <div class="format-text">
@@ -147,8 +135,8 @@
 
                     </article>
                 </li>
-                <li class="formats-item">
-                    <article class="format-card">
+                <li>
+                    <article>
                         <h3 class="format-title" lang="en">Handlebar</h3>
 
                         <div class="format-text">
@@ -181,7 +169,7 @@
 
 </main>
 
-<footer class="footer">
+<footer>
     <div class="container">
         <nav>
             <a href="#">
