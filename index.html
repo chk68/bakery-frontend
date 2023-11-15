@@ -28,7 +28,7 @@
           <li><a class='header-link' href='#contacts-section'> Контакти</a></li>
         </ul>
       </nav>
-      <button class='button' type='button'>Замовити дзвінок</button>
+      <button class='button modal-btn-open' type='button'>Замовити дзвінок</button>
     </div>
   </div>
 </header>
@@ -43,7 +43,7 @@
 
   <section class='advantages-section'>
     <div class='container'>
-      <h2 class='hidden'>Nashi perevagi</h2>
+      <h2 class='hidden'>Наші переваги</h2>
       <ul class='advantages-list'>
         <li class='advantages-item'>Попит на ринку</li>
         <li class='advantages-item'>Доступні формати</li>
@@ -83,7 +83,7 @@
   <section class='section' id='chefs-section'>
     <div class='container'>
       <h2 class='chefs-title section-title centered'>
-        Наші найкращі <span class='accent'>шеф - кухарі</span></h2>
+        Наші найкращі <br /><span class='accent'>шеф - кухарі</span></h2>
       <ul class='chefs-list'>
         <li class='chefs-item'>
           <article class='chef-card'>
@@ -105,7 +105,7 @@
         </li>
         <li class='chefs-item'>
           <article class='chef-card'>
-            <img class='chef-photo' src='/images/vlad-chef.jpg' alt='vldch'>
+            <img class='chef-photo' src='/images/vlad-chef.jpg' alt='vlad-chef'>
             <div>
               <h3 class='chef-title'>Влад</h3>
               <div class='chef-text'>
@@ -115,7 +115,7 @@
                   Мій кодитерський стаж вже 18 років.
                 </p>
                 <p>
-                  SHOP BEKERY - це наша любов, з
+                  SHOP BAKERY - це наша любов, з
                   якою ми ділимось кожен
                   раз з Вами
                   через нашу випічку!
@@ -253,7 +253,7 @@
 
         </ul>
         <div class='address-info'>
-          <a class='address-link' href='#' target='_blank'>politika</a>
+          <a class='address-link' href='#' target='_blank'>Політика конфедеційності</a>
           <p class='address-copyright'>&copy; 2023</p>
         </div>
       </address>
@@ -261,6 +261,12 @@
   </div>
 </footer>
 
-</body>
+<div class='backdrop'>
+  <div class='modal'>'
+    <button class='modal-btn-close' type='button'>Close</button>
+  </div>
+</div>
 
+<script src='./js/modal.js'></script>
+</body>
 </html>
