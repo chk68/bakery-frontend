@@ -511,8 +511,10 @@ ul {
     max-width: 880px;
     height: 100%;
     max-height: 880px;
+    padding: 128px;
     background-color: var(--color-primary-light);
     border-radius: 32px;
+    overflow-y: auto;
 }
 
 .backdrop.is-hidden {
@@ -525,4 +527,61 @@ ul {
     position: absolute;
     top: 40px;
     right: 40px;
+}
+
+/*Form*/
+.form-field {
+    margin-bottom: 32px;
+}
+
+.form-label {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+}
+
+.form-input {
+    padding: 16px 42px;
+    width: 100%;
+    border: 1px solid var(--color-secondary-dark);
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.17px;
+    background-color: transparent;
+
+}
+
+.form-input:focus {
+    border-color: var(--color-brand-normal);
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: var(--color-secondary-dark);
+    font-size: 16px;
+    line-height: 1.17px;
+}
+
+.form-input:focus::placeholder {
+    color: var(--color-primary-dark);
+}
+
+.form-button {
+    display: block;
+    margin: 0 auto 24px;
+
+}
+
+.form-terms {
+    margin: 0 auto;
+    max-width: 220px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.form-terms-link {
+    color: var(--color-primary-dark);
+    text-underline-offset: 2px;
 }

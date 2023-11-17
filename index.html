@@ -198,6 +198,29 @@
                 <div class='contacts-form'>
                     <h2 class='contacts-title section-title'>Приєднуйся до мережі!</h2>
                     <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+
+                    <form name="contact-form" autocomplete="off">
+                        <div class="form-field">
+                            <label class="form-label hidden" for="user-name">Ім'я</label>
+                            <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ім'я"/>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-label hidden" for="user-tel">Телефон</label>
+                            <input class="form-input" type="tel" name="user-tel" id="user-tel" placeholder="Телефон"/>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-label hidden" for="user-email">Електрона пошта</label>
+                            <input class="form-input" type="email" name="user-email" id="user-email"
+                                   placeholder="Електрона пошта"/>
+                        </div>
+
+                        <button class="form-button button" type="submit">Замовити дзвінок</button>
+                        <p class="form-terms">
+                            Натискаючи на кнопку я погоджуюсь з <a class="form-terms-link" href="#">політикою
+                            конфедейійності</a>
+                        </p>
+                    </form>
+
                 </div>
                 <iframe class='contacts-map'
                         src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2677.3251462111166!2d35.11264612553848!3d47.85266585890833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc67c87de5c4d3%3A0x4111764b468f1f96!2z0JHRltC70LjQuSDQndCw0LvQuNCy!5e0!3m2!1suk!2sua!4v1699823310225!5m2!1suk!2sua'
@@ -262,9 +285,30 @@
     </div>
 </footer>
 
-<div class='backdrop is-hidden'>
-    <div class='modal'>'
+<div class='backdrop '>
+    <div class='modal'>
         <button class='modal-btn-close' type='button'>Close</button>
+        <h2>Замовити дзвінок</h2>
+        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        <form name="modal-form" autocomplete="off" novalidate>
+            <div class="form-field">
+                <label class="form-label hidden" for="user-name">Ім'я</label>
+                <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ім'я"/>
+            </div>
+            <div class="form-field">
+                <label class="form-label hidden" for="user-tel">Телефон</label>
+                <input class="form-input" type="tel" name="user-tel" id="user-tel" placeholder="Телефон"/>
+            </div>
+            <div class="form-field">
+                <label class="form-label hidden" for="user-email">Електрона пошта</label>
+                <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Електрона пошта"/>
+            </div>
+
+            <button class="form-button button" type="submit">Замовити дзвінок</button>
+            <p class="form-terms">
+                Натискаючи на кнопку я погоджуюсь з <a class="form-terms-link" href="#">політикою конфедейійності</a>
+            </p>
+        </form>
     </div>
 </div>
 
