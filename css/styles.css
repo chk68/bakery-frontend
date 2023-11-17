@@ -97,6 +97,14 @@ ul {
 }
 
 /*Header*/
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 32px;
+}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -126,6 +134,7 @@ ul {
 .header-link {
     color: var(--color-primary-light);
     text-decoration: none;
+    transition: color 0.3s;
 
 
 }
@@ -154,7 +163,12 @@ ul {
 /* Hero-section */
 .hero-section {
     padding: 272px 0;
-    background-image: url("../images/hero-section-background.jpg");
+    background-image: linear-gradient(
+            103deg,
+            rgba(18, 18, 17, 0.78) 2.03%,
+            rgba(18, 18, 17, 0.60) 58.46%,
+            rgba(18, 18, 17, 0.00) 90.36%),
+    url("../images/hero-section-background.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -325,6 +339,11 @@ ul {
             rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
     border: 1px solid lightgray; /* remove */
     border-radius: 16px;
+    transition: transform 0.3s;
+}
+
+.format-card:hover {
+    transform: scale(1.05);
 }
 
 .formats-title {
@@ -355,6 +374,11 @@ ul {
     border: 1px solid var(--color-primary-dark);
     padding: 0;
     cursor: pointer;
+
+}
+
+.carousel-button.next {
+    transform: rotate(180deg);
 }
 
 .carousel-button:hover {
@@ -470,6 +494,7 @@ ul {
 .backdrop {
     position: fixed;
     display: flex;
+    padding: 20px 0;
     justify-content: center;
     align-items: center;
     top: 0;
@@ -477,12 +502,15 @@ ul {
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s, visibility 0.3s;
 }
 
 .modal {
     position: relative;
-    width: 880px;
-    height: 880px;
+    width: 100%;
+    max-width: 880px;
+    height: 100%;
+    max-height: 880px;
     background-color: var(--color-primary-light);
     border-radius: 32px;
 }
