@@ -28,16 +28,24 @@
                     <li><a class='link' href='#contact-section'> Контакти</a></li>
                 </ul>
             </nav>
-            <button class='button modal-btn-open' type='button'>Замовити дзвінок</button>
+            <button class='header__button button modal-btn-open' type='button'>Замовити дзвінок</button>
+            <button class="header__burger menu-btn-open" type="button">
+                <svg width='24' height='24'>
+                    <use href='./images/icons.svg#icon-menu'></use>
+                </svg>
+            </button>
+            <div class="mobile-menu">
+                <button class="mobile-menu__btn-close menu-btn-close" type="button">Close</button>
+            </div>
         </div>
     </div>
 </header>
-
 <main>
 
     <section class='hero-section'>
         <div class='container'>
             <h1 class='hero-section__title'><span class='text-brand'>Сучасна</span> пекарня</h1>
+            <button class='hero-section__button button modal-btn-open' type='button'>Замовити дзвінок</button>
         </div>
     </section>
 
@@ -77,7 +85,7 @@
                     </p>
                 </div>
                 <div class='traditions-section__image'>
-                    <img src='./images/baker-man.jpg' alt='Чоловік-пекар дивиться на батони'/>
+                    <img class="traditions-section__image" srcset="./images/baker-man@2x.jpg 2x, ./images/baker-man.jpg 1x" src='./images/baker-man.jpg' alt='Чоловік-пекар дивиться на батони'/>
                 </div>
             </div>
         </div>
@@ -335,5 +343,6 @@
 </div>
 
 <script src='./js/modal.js'></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
