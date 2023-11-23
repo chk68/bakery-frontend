@@ -1,7 +1,7 @@
 .backdrop {
   position: fixed;
   display: flex;
-  padding: 20px 0;
+  padding: 20px;
   justify-content: center;
   align-items: center;
   top: 0;
@@ -24,10 +24,14 @@
   max-width: 880px;
   height: 100%;
   max-height: 880px;
-  padding: 128px;
+  padding: 48px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
   overflow-y: auto;
+
+  @media screen and (min-width: $bp-tablet){
+    padding: 128px;
+  }
 
   &__btn-close {
     position: absolute;
