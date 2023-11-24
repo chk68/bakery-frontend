@@ -14,7 +14,13 @@
   }
 
   &__title {
-    margin-bottom: 80px;
+    margin-bottom: 16px;
+  }
+
+  &__text{
+    font-size: 18px;
+    color: var(--color-brand-normal);
+    margin-bottom: 42px;
   }
 
   &__form-field {

@@ -29,7 +29,23 @@
   border-radius: 32px;
   overflow-y: auto;
 
-  @media screen and (min-width: $bp-tablet){
+  &::-webkit-scrollbar {
+    width: 10px;
+    transform: translateY(-6px);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary-dark);
+    border-radius: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--color-primary-light);
+    border-radius: 12px;
+  }
+
+
+  @media screen and (min-width: $bp-tablet) {
     padding: 128px;
   }
 
@@ -39,13 +55,25 @@
     right: 40px;
   }
 
-  &__form-field{
+  &__form-field {
     margin-bottom: 32px;
   }
 
-  &__button{
+  &__button {
     margin: 0 auto 24px;
+    fill: transparent;
+  }
 
+  &__title {
+    text-align: center;
+    font-size: 56px;
+    margin-bottom:16px;
+  }
+
+  &__text {
+    text-align: center;
+    color: var(--color-brand-normal);
+    margin-bottom: 48px;
   }
 }
 
