@@ -23,13 +23,13 @@
   }
 
   &__btn-close {
+    margin-top: 16px;
     position: absolute;
     top: 16px;
     right: 24px;
     align-items: center;
     justify-content: center;
     padding: 0;
-    fill: transparent;
     stroke: var(--color-primary-dark);
     background-color: transparent;
     border: none;
@@ -61,21 +61,15 @@
     }
   }
 
-  &__img-container {
-    position: absolute;
-    bottom: 350px; /* Помещаем контейнер с изображениями внизу формы */
-    transform: translateX(70%); /* Центрируем контейнер по горизонтали */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   &__img {
-    /* Убираем position: absolute; и все остальные свойства отдельных изображений */
-    width: 350px; /* Ширина и высота изображений (замените на нужные значения) */
-    height: 350px;
-    margin-top: 4px; /* Добавьте нужный отступ между изображениями */
-    z-index: 1; /* Устанавливаем более высокий z-index для обоих изображений */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 200px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    z-index: 1;
     background-repeat: no-repeat;
   }
 }

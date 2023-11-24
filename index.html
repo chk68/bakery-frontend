@@ -29,14 +29,18 @@
                     <li><a class='link' href='#contact-section'> Контакти</a></li>
                 </ul>
             </nav>
-            <button class='header__button button modal-btn-open' type='button'>Замовити дзвінок</button>
+            <button class='header__button button header-modal-btn-open' type='button'>Замовити дзвінок</button>
             <button class="header__burger menu-btn-open" type="button">
                 <svg width='24' height='24'>
                     <use href='./images/icons.svg#icon-menu'></use>
                 </svg>
             </button>
             <div class="mobile-menu">
-                <button class="mobile-menu__btn-close menu-btn-close" type="button">Close</button>
+                <button class="mobile-menu__btn-close menu-btn-close" type="button">
+                    <svg width='12' height='12'>
+                        <use href='./images/icons.svg#icon-cross'></use>
+                    </svg>
+                </button>
                 <a class="mobile-menu__logo" href="/">
                     <img src="./images/logo-black.svg">
                 </a>
@@ -46,11 +50,9 @@
                     <li><a class="mobile-menu__link" href="#formats-section"> Формати </a></li>
                     <li><a class="mobile-menu__link" href="#contact-section"> Контакти </a></li>
                 </ul>
-                <div class="mobile-menu__img-container">
-                    <a class="mobile-menu__img" href="/">
+                    <a class="mobile-menu__img">
                         <img src="./images/mobile-menu-bread.png" alt="Bread Image">
                     </a>
-                </div>
             </div>
         </div>
     </div>
@@ -60,7 +62,7 @@
     <section class='hero-section'>
         <div class='container'>
             <h1 class='hero-section__title'><span class='text-brand'>Сучасна</span> пекарня</h1>
-            <button class='hero-section__button button modal-btn-open' type='button'>Замовити дзвінок</button>
+            <button class="hero-section__button button hero-modal-btn-open" type="button">Замовити дзвінок</button>
         </div>
     </section>
 
@@ -287,17 +289,20 @@
                         <div class="contact-section__form-field input">
                             <label class="input__label hidden" for="user-name">Ім'я</label>
                             <input class="input__control" type="text" name="user-name" id="user-name"
-                                   placeholder="Ім'я"/>
+                                   placeholder="Ім'я"
+                                   required/>
                         </div>
                         <div class="contact-section__form-field input">
                             <label class="input__label hidden" for="user-tel">Телефон</label>
                             <input class="input__control" type="tel" name="user-tel" id="user-tel"
-                                   placeholder="Телефон"/>
+                                   placeholder="Телефон"
+                                   required/>
                         </div>
                         <div class="contact-section__form-field input">
                             <label class="input__label hidden" for="user-email">Електрона пошта</label>
                             <input class="input__control" type="email" name="user-email" id="user-email"
-                                   placeholder="Електрона пошта"/>
+                                   placeholder="Електрона пошта"
+                                   required/>
                         </div>
 
                         <button class="contact-section__button button" type="submit">Замовити дзвінок</button>

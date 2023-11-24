@@ -1,8 +1,17 @@
-const modal = document.querySelector('.backdrop');
-const modalBtnOpen = document.querySelector('.modal-btn-open');
-const modalBtnClose = document.querySelector('.modal-btn-close');
+document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.querySelector('.backdrop');
 
-const toggleModal = () => modal.classList.toggle('is-hidden');
+    const heroModalBtnOpen = document.querySelector('.hero-modal-btn-open');
+    const headerModalBtnOpen = document.querySelector('.header-modal-btn-open');
+    const modalBtnClose = document.querySelector('.modal-btn-close');
 
-modalBtnOpen.addEventListener('click', toggleModal);
-modalBtnClose.addEventListener('click', toggleModal);
+    const toggleModal = () => modal.classList.toggle('is-hidden');
+
+    if (heroModalBtnOpen && headerModalBtnOpen && modalBtnClose) {
+        heroModalBtnOpen.addEventListener('click', toggleModal);
+        headerModalBtnOpen.addEventListener('click', toggleModal);
+        modalBtnClose.addEventListener('click', toggleModal);
+    } else {
+        console.error('One or more buttons not found.');
+    }
+});
